@@ -5,7 +5,9 @@ class WorldTime{
   String time;
   String flag;
   String url;
-  void getTime() async {
+
+  WorldTime({this.location,this.flag,this.url});
+  Future<void> getTime() async {
     // make the request
     Response response = await get('http://worldtimeapi.org/api/timezone/$url');
     Map data = jsonDecode(response.body);
