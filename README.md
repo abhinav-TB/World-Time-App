@@ -1,3 +1,3 @@
 # world time App
 
-under construction
+A cross platform App which show's Time of different Timezones all over the world
